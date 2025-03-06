@@ -22,9 +22,33 @@ h2 {
 }
 
 body {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.actions {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.github-link {
+  color: black;
+  font-size: 2.5rem;
+  align-self: center;
+}
 .app-container {
   display: flex;
   justify-content: space-between;
@@ -63,6 +87,8 @@ body {
 .contact-details {
   display: flex;
   gap: 1rem;
+
+  flex-wrap: wrap;
 }
 
 .education,

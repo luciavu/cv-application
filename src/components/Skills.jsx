@@ -12,7 +12,7 @@ function Skills() {
           <div className="frameworks">
             <div className="skill">Technologies/Frameworks:</div>
             <div className="skill-detail">
-              NodeJS, Express, ReactJS, Redux, Django, JSON, Kafka, Flask, Spark
+              NodeJS, Express, ReactJS, Django, JSON, Kafka, Flask, Spark
             </div>
           </div>
           <div className="databases">
