@@ -8,6 +8,7 @@ function Header() {
         <a className="github-link" href="https://github.com/luciavu/cv-application" target="_blank">
           <FaGithub />
         </a>
+
         <div className="actions">
           <div id="save">
             <MdOutlineSaveAlt />

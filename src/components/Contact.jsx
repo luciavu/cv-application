@@ -3,7 +3,7 @@ function Contact() {
     <>
       <div className="contact">
         <div className="name">
-          <h1>Lucia Vu</h1>
+          <h1>Your Name</h1>
         </div>
         <div className="contact-details">
           <div className="phone">(012) 345-678</div>

@@ -11,10 +11,36 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 764px) {
+  * {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .app-container .input-container {
+    width: 100%;
+  }
+
+  .app-container .preview {
+    width: 100%;
+  }
+}
+
 h1,
 h2,
 h3 {
   margin: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 h2 {
@@ -49,11 +75,12 @@ body {
   font-size: 2.5rem;
   align-self: center;
 }
+
 .app-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 2rem;
+  gap: 2vw;
 }
 
 .preview {
@@ -61,6 +88,7 @@ body {
 }
 
 .card {
+  max-width: 100%;
   padding: 1.5rem 3rem;
   aspect-ratio: 1 / 1.4141;
   box-shadow: 0 0 0.3rem 0.01rem #d1d1d1;
@@ -79,6 +107,7 @@ body {
 .title {
   font-weight: bold;
   font-style: oblique;
+  text-align: start;
 }
 .name {
   font-size: 0.7rem;
@@ -166,12 +195,101 @@ li {
 
 .skill {
   font-weight: bold;
+  text-align: start;
 }
 
 .skill-detail {
   text-align: left;
 }
 
-.input-container {
+.expandable {
   background-color: blue;
+  padding: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 1rem;
+}
+
+.input-container * {
+  font-family: 'Inter Tight', sans-serif;
+  color: #3b3b3b;
+}
+
+.input-container > h1 {
+  font-size: 2.4rem;
+  padding-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.input-container h3 {
+  font-weight: 300;
+  font-size: 1rem;
+  padding-bottom: 1.2rem;
+}
+
+.input {
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+}
+
+.collapsible {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.01rem solid #d1d1d1;
+}
+
+.content {
+  display: none;
+  padding: 1rem;
+  width: 100%;
+  text-align: start;
+}
+
+.active {
+  display: block;
+}
+
+.input-label {
+  position: relative;
+}
+
+input {
+  background-color: #f3f3f3;
+  border: none;
+  padding: 1.2rem 1rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 0.8rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  font-size: 0.8rem;
+  color: #939393;
+}
+
+label {
+  left: 1rem;
+  top: 0.1rem;
+  font-size: 0.6rem;
+}
+
+.dates {
+  display: flex;
+  gap: 1rem;
 }
