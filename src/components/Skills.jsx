@@ -21,7 +21,7 @@ function Skills() {
           </div>
           <div className="software">
             <div className="skill">Software and Tools:</div>
-            <div className="skill-detail">Git, VSCode, GithUb, JIRA, Postman, Selenium</div>
+            <div className="skill-detail">Git, VSCode, GitHub, JIRA, Postman, Selenium</div>
           </div>
           <div className="platforms">
             <div className="skill">Platforms:</div>

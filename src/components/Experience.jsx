@@ -10,7 +10,7 @@ function Experience() {
               <div className="title">Software Engineer Intern</div>
               <div className="date">May 2022 - Nov 2022</div>
             </div>
-            <div className="company">Embark</div>
+            <div className="company-name">Embark</div>
             <ul className="job">
               <li>
                 Worked with product managers to re-architect a multi-page web app into a single page
@@ -27,7 +27,7 @@ function Experience() {
               <div className="title">Software Engineer Intern</div>
               <div className="date">May 2021 - Nov 2021</div>
             </div>
-            <div className="company">MarketSmart</div>
+            <div className="company-name">MarketSmart</div>
             <ul className="job">
               <li>
                 Built RESTful APIs that served data to the JavaScript front-end based on dynamically
