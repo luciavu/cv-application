@@ -53,12 +53,14 @@ function ExperienceInput({
         <h4>Experience 1</h4>
         <div className="dates">
           <InputLabel
+            id="start-date1"
             label="Start Date"
             type="date"
             labelvalue={role1StartDate}
             handleChange={handleRole1StartDateChange}
           ></InputLabel>
           <InputLabel
+            id="end-date1"
             label="End Date"
             type="date"
             labelvalue={role1EndDate}
@@ -66,12 +68,14 @@ function ExperienceInput({
           ></InputLabel>
         </div>
         <InputLabel
+          id="role1"
           label="Role"
           type="text"
           labelvalue={role1}
           handleChange={handleRole1Change}
         ></InputLabel>
         <InputLabel
+          id="company1"
           label="Company"
           type="text"
           labelvalue={company1}
@@ -116,12 +120,14 @@ function ExperienceInput({
         </div>
         <div className="dates">
           <InputLabel
+            id="start-date2"
             label="Start Date"
             type="date"
             labelvalue={role2StartDate}
             handleChange={handleRole2StartDateChange}
           ></InputLabel>
           <InputLabel
+            id="end-date2"
             label="End Date"
             type="date"
             labelvalue={role2EndDate}
@@ -129,12 +135,14 @@ function ExperienceInput({
           ></InputLabel>
         </div>
         <InputLabel
+          id="role2"
           label="Role"
           type="text"
           labelvalue={role2}
           handleChange={handleRole2Change}
         ></InputLabel>
         <InputLabel
+          id="company2"
           label="Company"
           type="text"
           labelvalue={company2}

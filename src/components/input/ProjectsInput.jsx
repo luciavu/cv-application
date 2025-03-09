@@ -31,12 +31,14 @@ function ProjectsInput({
       <div className="project-input">
         <h4>Project 1</h4>
         <InputLabel
+          id="project1"
           label="Project Name"
           type="text"
           labelvalue={projName1}
           handleChange={handleProjName1Change}
         ></InputLabel>
         <InputLabel
+          id="link1"
           label="Link"
           type="text"
           labelvalue={projLink1}
@@ -74,12 +76,14 @@ function ProjectsInput({
       <div className="project-input">
         <h4>Project 2</h4>
         <InputLabel
+          id="project2"
           label="Project Name"
           type="text"
           labelvalue={projName2}
           handleChange={handleProjName2Change}
         ></InputLabel>
         <InputLabel
+          id="link2"
           label="Link"
           type="text"
           labelvalue={projLink2}

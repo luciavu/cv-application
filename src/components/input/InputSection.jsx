@@ -4,7 +4,8 @@ import ExperienceInput from './ExperienceInput';
 import ProjectsInput from './ProjectsInput';
 import SkillsInput from './SkillsInput';
 import Collapsible from './Collapsible';
-
+import { FaGithub } from 'react-icons/fa';
+import '.../styles/preview.css';
 function InputSection({
   name,
   setName,
@@ -92,7 +93,17 @@ function InputSection({
   return (
     <>
       <div className="input-container">
-        <h1>cv generator</h1>
+        <div className="heading">
+          <a
+            className="github-link"
+            href="https://github.com/luciavu/cv-application"
+            target="_blank"
+          >
+            <FaGithub />
+          </a>
+          <h1>cv generator</h1>
+        </div>
+
         <h3>Fill in the fields below to get started. </h3>
         <Collapsible
           name="Contact"

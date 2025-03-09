@@ -21,30 +21,35 @@ function SkillsInput({
   return (
     <>
       <InputLabel
+        id="languages"
         label="Languages"
         type="text"
         labelvalue={languages}
         handleChange={handleLanguagesChange}
       ></InputLabel>
       <InputLabel
+        id="frameworks"
         label="Technologies/Frameworks"
         type="text"
         labelvalue={frameworks}
         handleChange={handleFrameworksChange}
       ></InputLabel>
       <InputLabel
+        id="databases"
         label="Databases"
         type="text"
         labelvalue={databases}
         handleChange={handleDatabasesChange}
       ></InputLabel>
       <InputLabel
+        id="tools"
         label="Software and Tools"
         type="text"
         labelvalue={tools}
         handleChange={handleToolsChange}
       ></InputLabel>
       <InputLabel
+        id="platforms"
         label="Platforms"
         type="text"
         labelvalue={platforms}
