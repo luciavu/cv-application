@@ -5,7 +5,7 @@ import ProjectsInput from './ProjectsInput';
 import SkillsInput from './SkillsInput';
 import Collapsible from './Collapsible';
 import { FaGithub } from 'react-icons/fa';
-import '.../styles/preview.css';
+
 function InputSection({
   name,
   setName,

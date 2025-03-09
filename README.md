@@ -6,10 +6,10 @@ A live CV/resume generator application built using React and deployed with Verce
 
 ## Preview
 
-![alt text](image.png)
+![alt text](preview.png)
 
 ## Links
 
-Live link: TBD
+Live link: https://cv-application-theta-three.vercel.app/
 
 Assignment: https://www.theodinproject.com/lessons/node-path-react-new-cv-application
