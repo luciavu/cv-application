@@ -343,6 +343,17 @@ label {
   padding-bottom: 1rem;
 }
 
+.deletable-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+svg {
+  cursor: pointer;
+}
+
 .textarea-label {
   position: relative;
 }
@@ -353,4 +364,8 @@ label {
   bottom: 1.5rem;
   right: 1rem;
   font-size: 0.6rem;
+}
+
+.hidden {
+  display: none;
 }

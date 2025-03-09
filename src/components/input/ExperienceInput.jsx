@@ -1,4 +1,6 @@
 import InputLabel from './InputLabel';
+import { formatDate } from '../../util';
+import { FaXmark } from 'react-icons/fa6';
 
 function ExperienceInput({
   role1StartDate,
@@ -25,11 +27,17 @@ function ExperienceInput({
   setRole2D1,
   role2D2,
   setRole2D2,
+  isHidden,
+  setIsHidden,
 }) {
-  const handleRole1StartDateChange = (e) => setRole1StartDate(e.target.value);
-  const handleRole2StartDateChange = (e) => setRole2StartDate(e.target.value);
-  const handleRole1EndDateChange = (e) => setRole1EndDate(e.target.value);
-  const handleRole2EndDateChange = (e) => setRole2EndDate(e.target.value);
+  const handleClick = () => {
+    setIsHidden(true);
+  };
+
+  const handleRole1StartDateChange = (e) => setRole1StartDate(formatDate(e.target.value));
+  const handleRole2StartDateChange = (e) => setRole2StartDate(formatDate(e.target.value));
+  const handleRole1EndDateChange = (e) => setRole1EndDate(formatDate(e.target.value));
+  const handleRole2EndDateChange = (e) => setRole2EndDate(formatDate(e.target.value));
   const handleRole1Change = (e) => setRole1(e.target.value);
   const handleRole2Change = (e) => setRole2(e.target.value);
   const handleCompany1Change = (e) => setCompany1(e.target.value);
@@ -48,26 +56,26 @@ function ExperienceInput({
             label="Start Date"
             type="date"
             labelvalue={role1StartDate}
-            onChange={handleRole1StartDateChange}
+            handleChange={handleRole1StartDateChange}
           ></InputLabel>
           <InputLabel
             label="End Date"
             type="date"
             labelvalue={role1EndDate}
-            onChange={handleRole1EndDateChange}
+            handleChange={handleRole1EndDateChange}
           ></InputLabel>
         </div>
         <InputLabel
           label="Role"
           type="text"
           labelvalue={role1}
-          onChange={handleRole1Change}
+          handleChange={handleRole1Change}
         ></InputLabel>
         <InputLabel
           label="Company"
           type="text"
           labelvalue={company1}
-          onChange={handleCompany1Change}
+          handleChange={handleCompany1Change}
         ></InputLabel>
         <div className="textarea-label">
           <label htmlFor="exp1d1">Description 1</label>
@@ -98,33 +106,39 @@ function ExperienceInput({
           <div className="maxlen">Max length: 250 characters</div>
         </div>
       </div>
-      <div className="experience-fields">
-        <h4>Experience 2</h4>
+
+      <div className={`experience-fields ${isHidden ? 'hidden' : ''}`}>
+        <div className="deletable-banner">
+          <h4>Experience 2</h4>
+          <h4>
+            <FaXmark onClick={handleClick} />
+          </h4>
+        </div>
         <div className="dates">
           <InputLabel
             label="Start Date"
             type="date"
             labelvalue={role2StartDate}
-            onChange={handleRole2StartDateChange}
+            handleChange={handleRole2StartDateChange}
           ></InputLabel>
           <InputLabel
             label="End Date"
             type="date"
             labelvalue={role2EndDate}
-            onChange={handleRole2EndDateChange}
+            handleChange={handleRole2EndDateChange}
           ></InputLabel>
         </div>
         <InputLabel
           label="Role"
           type="text"
           labelvalue={role2}
-          onChange={handleRole2Change}
+          handleChange={handleRole2Change}
         ></InputLabel>
         <InputLabel
           label="Company"
           type="text"
           labelvalue={company2}
-          onChange={handleCompany2Change}
+          handleChange={handleCompany2Change}
         ></InputLabel>
         <div className="textarea-label">
           <label htmlFor="exp2d1">Description 1</label>

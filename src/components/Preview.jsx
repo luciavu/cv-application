@@ -19,6 +19,7 @@ function Preview({
   schoolStartDate2,
   schoolEndDate1,
   schoolEndDate2,
+  isHiddenEdu,
   role1StartDate,
   role2StartDate,
   role1EndDate,
@@ -31,6 +32,7 @@ function Preview({
   role1D2,
   role2D1,
   role2D2,
+  isHiddenExp,
   projName1,
   projName2,
   projLink1,
@@ -61,6 +63,7 @@ function Preview({
             schoolStartDate2={schoolStartDate2}
             schoolEndDate1={schoolEndDate1}
             schoolEndDate2={schoolEndDate2}
+            isHidden={isHiddenEdu}
           ></Education>
           <Experience
             role1StartDate={role1StartDate}
@@ -75,6 +78,7 @@ function Preview({
             role1D2={role1D2}
             role2D1={role2D1}
             role2D2={role2D2}
+            isHidden={isHiddenExp}
           ></Experience>
           <Projects
             projName1={projName1}

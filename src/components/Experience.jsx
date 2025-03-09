@@ -1,4 +1,18 @@
-function Experience() {
+function Experience({
+  role1StartDate,
+  role2StartDate,
+  role1EndDate,
+  role2EndDate,
+  role1,
+  role2,
+  company1,
+  company2,
+  role1D1,
+  role1D2,
+  role2D1,
+  role2D2,
+  isHidden,
+}) {
   return (
     <>
       <div className="experience">
@@ -7,36 +21,28 @@ function Experience() {
         <div className="experience-container">
           <div className="container">
             <div className="role-date">
-              <div className="title">Software Engineer Intern</div>
-              <div className="date">May 2022 - Nov 2022</div>
+              <div className="title">{role1}</div>
+              <div className="date">
+                {role1StartDate} - {role1EndDate}
+              </div>
             </div>
-            <div className="company-name">Embark</div>
+            <div className="company-name">{company1}</div>
             <ul className="job">
-              <li>
-                Worked with product managers to re-architect a multi-page web app into a single page
-                web-app, boosting yearly revenue by $1.4M
-              </li>
-              <li>
-                Constructed the logic for a streamlined ad-serving platform that scaled to our 35M
-                users, which improved the page speed by 15% after implementation
-              </li>
+              <li>{role1D1}</li>
+              <li>{role1D2}</li>
             </ul>
           </div>
-          <div className="container">
+          <div className={`container ${isHidden ? 'hidden' : ''}`}>
             <div className="role-date">
-              <div className="title">Software Engineer Intern</div>
-              <div className="date">May 2021 - Nov 2021</div>
+              <div className="title">{role2}</div>
+              <div className="date">
+                {role2StartDate} - {role2EndDate}
+              </div>
             </div>
-            <div className="company-name">MarketSmart</div>
+            <div className="company-name">{company2}</div>
             <ul className="job">
-              <li>
-                Built RESTful APIs that served data to the JavaScript front-end based on dynamically
-                chosen user inputs that handled over 500,000 concurrent users
-              </li>
-              <li>
-                Built internal tools using NodeJS and Pupeteer.js to automate QA and monitoring of
-                donor-facing web app, which improved CTR by 20%
-              </li>
+              <li>{role2D1}</li>
+              <li>{role2D2}</li>
             </ul>
           </div>
         </div>

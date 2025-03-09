@@ -34,13 +34,13 @@ function ProjectsInput({
           label="Project Name"
           type="text"
           labelvalue={projName1}
-          onChange={handleProjName1Change}
+          handleChange={handleProjName1Change}
         ></InputLabel>
         <InputLabel
           label="Link"
           type="text"
           labelvalue={projLink1}
-          onChange={handleProjLink1Change}
+          handleChange={handleProjLink1Change}
         ></InputLabel>
         <div className="textarea-label">
           <label htmlFor="proj1d1">Description 1</label>
@@ -77,13 +77,13 @@ function ProjectsInput({
           label="Project Name"
           type="text"
           labelvalue={projName2}
-          onChange={handleProjName2Change}
+          handleChange={handleProjName2Change}
         ></InputLabel>
         <InputLabel
           label="Link"
           type="text"
           labelvalue={projLink2}
-          onChange={handleProjLink2Change}
+          handleChange={handleProjLink2Change}
         ></InputLabel>
         <div className="textarea-label">
           <label htmlFor="proj2d1">Description 1</label>

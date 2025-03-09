@@ -24,31 +24,31 @@ function SkillsInput({
         label="Languages"
         type="text"
         labelvalue={languages}
-        onChange={handleLanguagesChange}
+        handleChange={handleLanguagesChange}
       ></InputLabel>
       <InputLabel
         label="Technologies/Frameworks"
         type="text"
         labelvalue={frameworks}
-        onChange={handleFrameworksChange}
+        handleChange={handleFrameworksChange}
       ></InputLabel>
       <InputLabel
         label="Databases"
         type="text"
         labelvalue={databases}
-        onChange={handleDatabasesChange}
+        handleChange={handleDatabasesChange}
       ></InputLabel>
       <InputLabel
         label="Software and Tools"
         type="text"
         labelvalue={tools}
-        onChange={handleToolsChange}
+        handleChange={handleToolsChange}
       ></InputLabel>
       <InputLabel
         label="Platforms"
         type="text"
         labelvalue={platforms}
-        onChange={handlePlatformsChange}
+        handleChange={handlePlatformsChange}
       ></InputLabel>
     </>
   );

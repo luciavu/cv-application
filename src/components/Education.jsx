@@ -9,6 +9,7 @@ function Education({
   schoolStartDate2,
   schoolEndDate1,
   schoolEndDate2,
+  isHidden,
 }) {
   return (
     <>
@@ -18,21 +19,25 @@ function Education({
         <div className="education-container">
           <div className="education-info">
             <div className="title">{schoolTitle1}</div>
-            <div className="date"> {schoolStartDate1} - May 2022</div>
+            <div className="date">
+              {schoolStartDate1} - {schoolEndDate1}
+            </div>
           </div>
           <div className="education-info2">
-            <div className="institution">Example University</div>
-            <div className="gpa">GPA: 3.82</div>
+            <div className="institution">{schoolName1}</div>
+            <div className="gpa">GPA: {gpa1}</div>
           </div>
         </div>
-        <div className="education-container">
+        <div className={`education-container ${isHidden ? 'hidden' : ''}`}>
           <div className="education-info">
-            <div className="title">Bachelor of Engineering, Computer Engineering</div>
-            <div className="date">Aug 2015 - Jun 2017</div>
+            <div className="title">{schoolTitle2}</div>
+            <div className="date">
+              {schoolStartDate2}- {schoolEndDate2}
+            </div>
           </div>
           <div className="education-info2">
-            <div className="institution">Example University</div>
-            <div className="gpa">GPA: 3.25</div>
+            <div className="institution">{schoolName2}</div>
+            <div className="gpa">GPA: {gpa2}</div>
           </div>
         </div>
       </div>

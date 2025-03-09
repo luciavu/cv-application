@@ -1,4 +1,13 @@
-function Projects() {
+function Projects({
+  projName1,
+  projName2,
+  projLink1,
+  projLink2,
+  proj1D1,
+  proj1D2,
+  proj2D1,
+  proj2D2,
+}) {
   return (
     <>
       <div className="projects">
@@ -7,35 +16,22 @@ function Projects() {
         <div className="project-container">
           <div className="project">
             <div className="title-link">
-              <div className="title">Poker Simulation</div>
-              <a className="link">(https://link-to-project.com)</a>
+              <div className="title">{projName1}</div>
+              <a className="link">{projLink1 ? `(${projLink1})` : ''}</a>
             </div>
             <ul className="description">
-              <li>
-                Built a full-stack web app to allow users to simulate and visualize outcomes of
-                poker hands against opponents of different play styles using open source cards.js on
-                the front-end
-              </li>
-              <li>
-                Utilized sci-kit learn in Python to simulate possible outcomes under different
-                scenarios that the user chose
-              </li>
+              {proj1D1 ? <li>{proj1D1}</li> : ''}
+              {proj1D2 ? <li>{proj1D2}</li> : ''}
             </ul>
           </div>
           <div className="project">
             <div className="title-link">
-              <div className="title">Real-Time Interactive 3D-Graphics Website</div>
-              <a className="link">(https://link-to-project.com)</a>
+              <div className="title">{projName2}</div>
+              <a className="link">{projLink2 ? `(${projLink2})` : ''}</a>
             </div>
             <ul className="description">
-              <li>
-                Developed an interactive graphics website using THREE.js to create a 3D workspace
-                with real-time animated 3D models of crystal lattice structures and robotic parts in
-                which animations and camera views can be manipulated.
-              </li>
-              <li>
-                Utilized Python, Flask, Heroku, JavaScript, AJAX, THREE.js, HTML/CSS, Docker, Git
-              </li>
+              {proj2D1 ? <li>{proj2D1}</li> : ''}
+              {proj2D2 ? <li>{proj2D2}</li> : ''}
             </ul>
           </div>
         </div>
