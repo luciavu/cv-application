@@ -1,4 +1,15 @@
-function Education() {
+function Education({
+  schoolTitle1,
+  schoolTitle2,
+  schoolName1,
+  schoolName2,
+  gpa1,
+  gpa2,
+  schoolStartDate1,
+  schoolStartDate2,
+  schoolEndDate1,
+  schoolEndDate2,
+}) {
   return (
     <>
       <div className="education">
@@ -6,8 +17,8 @@ function Education() {
         <hr />
         <div className="education-container">
           <div className="education-info">
-            <div className="title">Masters in Science, Software Engineering</div>
-            <div className="date">Aug 2019 - May 2022</div>
+            <div className="title">{schoolTitle1}</div>
+            <div className="date"> {schoolStartDate1} - May 2022</div>
           </div>
           <div className="education-info2">
             <div className="institution">Example University</div>

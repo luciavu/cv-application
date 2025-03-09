@@ -5,7 +5,7 @@ import ProjectsInput from './ProjectsInput';
 import SkillsInput from './SkillsInput';
 import Collapsible from './Collapsible';
 
-function InputSection() {
+function InputSection({ name, setName, phone, setPhone, email, setEmail, website, setWebsite }) {
   return (
     <>
       <div className="input-container">
@@ -13,7 +13,18 @@ function InputSection() {
         <h3>Fill in the fields below to get started. </h3>
         <Collapsible
           name="Contact"
-          inputFields={<ContactInput></ContactInput>}
+          inputFields={
+            <ContactInput
+              name={name}
+              setName={setName}
+              phone={phone}
+              setPhone={setPhone}
+              email={email}
+              setEmail={setEmail}
+              website={website}
+              setWebsite={setWebsite}
+            ></ContactInput>
+          }
           isOpen={true}
         ></Collapsible>
         <Collapsible name="Education" inputFields={<EducationInput></EducationInput>}></Collapsible>

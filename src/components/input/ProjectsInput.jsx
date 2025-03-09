@@ -1,12 +1,47 @@
 import InputLabel from './InputLabel';
 
-function ProjectsInput() {
+function ProjectsInput({
+  projName1,
+  setProjName1,
+  projName2,
+  setProjName2,
+  projLink1,
+  setProjLink1,
+  projLink2,
+  setProjLink2,
+  proj1D1,
+  setProj1D1,
+  proj1D2,
+  setProj1D2,
+  proj2D1,
+  setProj2D1,
+  proj2D2,
+  setProj2D2,
+}) {
+  const handleProjName1Change = (e) => setProjName1(e.target.value);
+  const handleProjName2Change = (e) => setProjName2(e.target.value);
+  const handleProjLink1Change = (e) => setProjLink1(e.target.value);
+  const handleProjLink2Change = (e) => setProjLink2(e.target.value);
+  const handleProj1D1Change = (e) => setProj1D1(e.target.value);
+  const handleProj1D2Change = (e) => setProj1D2(e.target.value);
+  const handleProj2D1Change = (e) => setProj2D1(e.target.value);
+  const handleProj2D2Change = (e) => setProj2D2(e.target.value);
   return (
     <>
       <div className="project-input">
         <h4>Project 1</h4>
-        <InputLabel label="Project Name" type="text"></InputLabel>
-        <InputLabel label="Link" type="text"></InputLabel>
+        <InputLabel
+          label="Project Name"
+          type="text"
+          labelvalue={projName1}
+          onChange={handleProjName1Change}
+        ></InputLabel>
+        <InputLabel
+          label="Link"
+          type="text"
+          labelvalue={projLink1}
+          onChange={handleProjLink1Change}
+        ></InputLabel>
         <div className="textarea-label">
           <label htmlFor="proj1d1">Description 1</label>
           <textarea
@@ -16,6 +51,8 @@ function ProjectsInput() {
             cols="10"
             wrap="soft"
             maxLength="250"
+            value={proj1D1}
+            onChange={handleProj1D1Change}
           ></textarea>
           <div className="maxlen">Max length: 250 characters</div>
         </div>
@@ -28,14 +65,26 @@ function ProjectsInput() {
             cols="10"
             wrap="soft"
             maxLength="250"
+            value={proj1D2}
+            onChange={handleProj1D2Change}
           ></textarea>
           <div className="maxlen">Max length: 250 characters</div>
         </div>
       </div>
       <div className="project-input">
         <h4>Project 2</h4>
-        <InputLabel label="Project Name" type="text"></InputLabel>
-        <InputLabel label="Link" type="text"></InputLabel>
+        <InputLabel
+          label="Project Name"
+          type="text"
+          labelvalue={projName2}
+          onChange={handleProjName2Change}
+        ></InputLabel>
+        <InputLabel
+          label="Link"
+          type="text"
+          labelvalue={projLink2}
+          onChange={handleProjLink2Change}
+        ></InputLabel>
         <div className="textarea-label">
           <label htmlFor="proj2d1">Description 1</label>
           <textarea
@@ -45,6 +94,8 @@ function ProjectsInput() {
             cols="10"
             wrap="soft"
             maxLength="250"
+            value={proj2D1}
+            onChange={handleProj2D1Change}
           ></textarea>
           <div className="maxlen">Max length: 250 characters</div>
         </div>
@@ -57,6 +108,8 @@ function ProjectsInput() {
             cols="10"
             wrap="soft"
             maxLength="250"
+            value={proj2D2}
+            onChange={handleProj2D2Change}
           ></textarea>
           <div className="maxlen">Max length: 250 characters</div>
         </div>

@@ -1,4 +1,4 @@
-function Skills() {
+function Skills({ languages, frameworks, databases, tools, platforms }) {
   return (
     <>
       <div className="skills">
@@ -7,12 +7,14 @@ function Skills() {
         <div className="skills-container">
           <div className="languages">
             <div className="skill">Languages:</div>
-            <div className="skill-detail">Java, Python, JavaScript, SQL, C, C++, Bash</div>
+            <div className="skill-detail">
+              Java, Python, JavaScript, SQL, C, C++, Bash{languages}
+            </div>
           </div>
           <div className="frameworks">
             <div className="skill">Technologies/Frameworks:</div>
             <div className="skill-detail">
-              NodeJS, Express, ReactJS, Django, JSON, Kafka, Flask, Spark
+              NodeJS, Express, ReactJS, Django, JSON, Kafka, Flask, Spark{frameworks}
             </div>
           </div>
           <div className="databases">

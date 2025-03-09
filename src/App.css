@@ -19,6 +19,15 @@
   .input-container * {
     font-size: 2.5vw;
   }
+
+  .input-container label {
+    font-size: 0.8rem;
+    top: 0.2rem;
+  }
+
+  .input-container .maxlen {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {

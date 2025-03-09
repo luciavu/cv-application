@@ -1,13 +1,9 @@
-//import { useState } from 'react';
-
-function InputLabel({ label, type }) {
-  //const [active, setActive] = useState(true);
-
+function InputLabel({ label, type, labelvalue, handleChange }) {
   return (
     <>
       <div className="input-label">
         <label htmlFor={label}>{label}</label>
-        <input id={label} type={type} />
+        <input id={label} type={type} value={labelvalue} onChange={handleChange} />
       </div>
     </>
   );
