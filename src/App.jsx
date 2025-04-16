@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import Preview from './components/Preview';
 import InputSection from './components/input/InputSection';
