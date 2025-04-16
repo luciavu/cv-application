@@ -1,4 +1,9 @@
-function Skills({ languages, frameworks, databases, tools, platforms }) {
+import { useContext } from 'react';
+import SkillsContext from '../context/SkillsContext';
+
+function Skills() {
+  const { languages, frameworks, databases, tools, platforms } = useContext(SkillsContext);
+
   return (
     <>
       <div className="skills">

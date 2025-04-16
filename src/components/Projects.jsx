@@ -1,13 +1,8 @@
-function Projects({
-  projName1,
-  projName2,
-  projLink1,
-  projLink2,
-  proj1D1,
-  proj1D2,
-  proj2D1,
-  proj2D2,
-}) {
+import { useContext } from 'react';
+import ProjectsContext from '../context/ProjectsContext';
+function Projects() {
+  const { projName1, projName2, projLink1, projLink2, proj1D1, proj1D2, proj2D1, proj2D2 } =
+    useContext(ProjectsContext);
   return (
     <>
       <div className="projects">

@@ -1,17 +1,21 @@
 import InputLabel from './InputLabel';
+import { useContext } from 'react';
+import SkillsContext from '../../context/SkillsContext';
 
-function SkillsInput({
-  languages,
-  setLanguages,
-  frameworks,
-  setFrameworks,
-  databases,
-  setDatabases,
-  tools,
-  setTools,
-  platforms,
-  setPlatforms,
-}) {
+function SkillsInput() {
+  const {
+    languages,
+    setLanguages,
+    frameworks,
+    setFrameworks,
+    databases,
+    setDatabases,
+    tools,
+    setTools,
+    platforms,
+    setPlatforms,
+  } = useContext(SkillsContext);
+
   const handleLanguagesChange = (e) => setLanguages(e.target.value);
   const handleFrameworksChange = (e) => setFrameworks(e.target.value);
   const handleDatabasesChange = (e) => setDatabases(e.target.value);

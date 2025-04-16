@@ -7,22 +7,6 @@ import Collapsible from './Collapsible';
 import { FaGithub } from 'react-icons/fa';
 
 function InputSection({
-  projName1,
-  setProjName1,
-  projName2,
-  setProjName2,
-  projLink1,
-  setProjLink1,
-  projLink2,
-  setProjLink2,
-  proj1D1,
-  setProj1D1,
-  proj1D2,
-  setProj1D2,
-  proj2D1,
-  setProj2D1,
-  proj2D2,
-  setProj2D2,
   languages,
   setLanguages,
   frameworks,
@@ -59,29 +43,7 @@ function InputSection({
           name="Experience"
           inputFields={<ExperienceInput></ExperienceInput>}
         ></Collapsible>
-        <Collapsible
-          name="Projects"
-          inputFields={
-            <ProjectsInput
-              projName1={projName1}
-              setProjName1={setProjName1}
-              projName2={projName2}
-              setProjName2={setProjName2}
-              projLink1={projLink1}
-              setProjLink1={setProjLink1}
-              projLink2={projLink2}
-              setProjLink2={setProjLink2}
-              proj1D1={proj1D1}
-              setProj1D1={setProj1D1}
-              proj1D2={proj1D2}
-              setProj1D2={setProj1D2}
-              proj2D1={proj2D1}
-              setProj2D1={setProj2D1}
-              proj2D2={proj2D2}
-              setProj2D2={setProj2D2}
-            ></ProjectsInput>
-          }
-        ></Collapsible>
+        <Collapsible name="Projects" inputFields={<ProjectsInput></ProjectsInput>}></Collapsible>
         <Collapsible
           name="Skills"
           inputFields={

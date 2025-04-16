@@ -1,23 +1,25 @@
 import InputLabel from './InputLabel';
-
-function ProjectsInput({
-  projName1,
-  setProjName1,
-  projName2,
-  setProjName2,
-  projLink1,
-  setProjLink1,
-  projLink2,
-  setProjLink2,
-  proj1D1,
-  setProj1D1,
-  proj1D2,
-  setProj1D2,
-  proj2D1,
-  setProj2D1,
-  proj2D2,
-  setProj2D2,
-}) {
+import { useContext } from 'react';
+import ProjectsContext from '../../context/ProjectsContext';
+function ProjectsInput() {
+  const {
+    projName1,
+    setProjName1,
+    projName2,
+    setProjName2,
+    projLink1,
+    setProjLink1,
+    projLink2,
+    setProjLink2,
+    proj1D1,
+    setProj1D1,
+    proj1D2,
+    setProj1D2,
+    proj2D1,
+    setProj2D1,
+    proj2D2,
+    setProj2D2,
+  } = useContext(ProjectsContext);
   const handleProjName1Change = (e) => setProjName1(e.target.value);
   const handleProjName2Change = (e) => setProjName2(e.target.value);
   const handleProjLink1Change = (e) => setProjLink1(e.target.value);
