@@ -1,5 +1,10 @@
 import InputLabel from './InputLabel';
-function ContactInput({ name, setName, phone, setPhone, email, setEmail, website, setWebsite }) {
+import { useContext } from 'react';
+import ContactContext from '../../context/ContactContext';
+
+function ContactInput() {
+  const { name, setName, phone, setPhone, email, setEmail, website, setWebsite } =
+    useContext(ContactContext);
   const handleNameChange = (e) => setName(e.target.value);
   const handlePhoneChange = (e) => setPhone(e.target.value);
   const handleEmailChange = (e) => setEmail(e.target.value);

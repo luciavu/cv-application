@@ -1,7 +1,5 @@
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import { useState } from 'react';
-//import InputLabel from './InputLabel';
-import ContactInput from './ContactInput';
 
 function Collapsible({ name, inputFields, isOpen = false }) {
   const [open, toggleOpen] = useState(isOpen);

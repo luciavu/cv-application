@@ -1,4 +1,9 @@
-function Contact({ name, phone, email, website }) {
+import { useContext } from 'react';
+import ContactContext from '../context/ContactContext';
+
+function Contact() {
+  const { name, phone, email, website } = useContext(ContactContext);
+
   return (
     <>
       <div className="contact">

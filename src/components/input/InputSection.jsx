@@ -7,62 +7,6 @@ import Collapsible from './Collapsible';
 import { FaGithub } from 'react-icons/fa';
 
 function InputSection({
-  name,
-  setName,
-  phone,
-  setPhone,
-  email,
-  setEmail,
-  website,
-  setWebsite,
-  schoolTitle1,
-  setSchoolTitle1,
-  schoolTitle2,
-  setSchoolTitle2,
-  schoolName1,
-  setSchoolName1,
-  schoolName2,
-  setSchoolName2,
-  gpa1,
-  setGpa1,
-  gpa2,
-  setGpa2,
-  schoolStartDate1,
-  setSchoolStartDate1,
-  schoolStartDate2,
-  setSchoolStartDate2,
-  schoolEndDate1,
-  setSchoolEndDate1,
-  schoolEndDate2,
-  setSchoolEndDate2,
-  isHiddenEdu,
-  setIsHiddenEdu,
-  role1StartDate,
-  setRole1StartDate,
-  role2StartDate,
-  setRole2StartDate,
-  role1EndDate,
-  setRole1EndDate,
-  role2EndDate,
-  setRole2EndDate,
-  role1,
-  setRole1,
-  role2,
-  setRole2,
-  company1,
-  setCompany1,
-  company2,
-  setCompany2,
-  role1D1,
-  setRole1D1,
-  role1D2,
-  setRole1D2,
-  role2D1,
-  setRole2D1,
-  role2D2,
-  setRole2D2,
-  isHiddenExp,
-  setIsHiddenExp,
   projName1,
   setProjName1,
   projName2,
@@ -107,81 +51,13 @@ function InputSection({
         <h3>Fill in the fields below to get started. </h3>
         <Collapsible
           name="Contact"
-          inputFields={
-            <ContactInput
-              name={name}
-              setName={setName}
-              phone={phone}
-              setPhone={setPhone}
-              email={email}
-              setEmail={setEmail}
-              website={website}
-              setWebsite={setWebsite}
-            ></ContactInput>
-          }
+          inputFields={<ContactInput></ContactInput>}
           isOpen={true}
         ></Collapsible>
-        <Collapsible
-          name="Education"
-          inputFields={
-            <EducationInput
-              schoolTitle1={schoolTitle1}
-              setSchoolTitle1={setSchoolTitle1}
-              schoolTitle2={schoolTitle2}
-              setSchoolTitle2={setSchoolTitle2}
-              schoolName1={schoolName1}
-              setSchoolName1={setSchoolName1}
-              schoolName2={schoolName2}
-              setSchoolName2={setSchoolName2}
-              gpa1={gpa1}
-              setGpa1={setGpa1}
-              gpa2={gpa2}
-              setGpa2={setGpa2}
-              schoolStartDate1={schoolStartDate1}
-              setSchoolStartDate1={setSchoolStartDate1}
-              schoolStartDate2={schoolStartDate2}
-              setSchoolStartDate2={setSchoolStartDate2}
-              schoolEndDate1={schoolEndDate1}
-              setSchoolEndDate1={setSchoolEndDate1}
-              schoolEndDate2={schoolEndDate2}
-              setSchoolEndDate2={setSchoolEndDate2}
-              isHidden={isHiddenEdu}
-              setIsHidden={setIsHiddenEdu}
-            ></EducationInput>
-          }
-        ></Collapsible>
+        <Collapsible name="Education" inputFields={<EducationInput></EducationInput>}></Collapsible>
         <Collapsible
           name="Experience"
-          inputFields={
-            <ExperienceInput
-              role1StartDate={role1StartDate}
-              set1RoleStartDate={setRole1StartDate}
-              role2StartDate={role2StartDate}
-              setRole2StartDate={setRole2StartDate}
-              role1EndDate={role1EndDate}
-              set1RoleEndDate={setRole1EndDate}
-              role2EndDate={role2EndDate}
-              setRole2EndDate={setRole2EndDate}
-              role1={role1}
-              setRole1={setRole1}
-              role2={role2}
-              setRole2={setRole2}
-              company1={company1}
-              setCompany1={setCompany1}
-              company2={company2}
-              setCompany2={setCompany2}
-              role1D1={role1D1}
-              setRole1D1={setRole1D1}
-              role1D2={role1D2}
-              setRole1D2={setRole1D2}
-              role2D1={role2D1}
-              setRole2D1={setRole2D1}
-              role2D2={role2D2}
-              setRole2D2={setRole2D2}
-              isHidden={isHiddenExp}
-              setIsHidden={setIsHiddenExp}
-            ></ExperienceInput>
-          }
+          inputFields={<ExperienceInput></ExperienceInput>}
         ></Collapsible>
         <Collapsible
           name="Projects"

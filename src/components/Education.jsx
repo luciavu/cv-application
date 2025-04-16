@@ -1,16 +1,21 @@
-function Education({
-  schoolTitle1,
-  schoolTitle2,
-  schoolName1,
-  schoolName2,
-  gpa1,
-  gpa2,
-  schoolStartDate1,
-  schoolStartDate2,
-  schoolEndDate1,
-  schoolEndDate2,
-  isHidden,
-}) {
+import { useContext } from 'react';
+import EducationContext from '../context/EducationContext';
+
+function Education() {
+  const {
+    schoolTitle1,
+    schoolTitle2,
+    schoolName1,
+    schoolName2,
+    gpa1,
+    gpa2,
+    schoolStartDate1,
+    schoolStartDate2,
+    schoolEndDate1,
+    schoolEndDate2,
+    isHidden,
+  } = useContext(EducationContext);
+
   return (
     <>
       <div className="education">

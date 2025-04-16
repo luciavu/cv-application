@@ -1,31 +1,34 @@
 import InputLabel from './InputLabel';
 import { formatDate } from '../../util';
 import { FaXmark } from 'react-icons/fa6';
+import { useContext } from 'react';
+import EducationContext from '../../context/EducationContext';
+function EducationInput() {
+  const {
+    schoolTitle1,
+    setSchoolTitle1,
+    schoolTitle2,
+    setSchoolTitle2,
+    schoolName1,
+    setSchoolName1,
+    schoolName2,
+    setSchoolName2,
+    gpa1,
+    setGpa1,
+    gpa2,
+    setGpa2,
+    schoolStartDate1,
+    setSchoolStartDate1,
+    schoolStartDate2,
+    setSchoolStartDate2,
+    schoolEndDate1,
+    setSchoolEndDate1,
+    schoolEndDate2,
+    setSchoolEndDate2,
+    isHidden,
+    setIsHidden,
+  } = useContext(EducationContext);
 
-function EducationInput({
-  schoolTitle1,
-  setSchoolTitle1,
-  schoolTitle2,
-  setSchoolTitle2,
-  schoolName1,
-  setSchoolName1,
-  schoolName2,
-  setSchoolName2,
-  gpa1,
-  setGpa1,
-  gpa2,
-  setGpa2,
-  schoolStartDate1,
-  setSchoolStartDate1,
-  schoolStartDate2,
-  setSchoolStartDate2,
-  schoolEndDate1,
-  setSchoolEndDate1,
-  schoolEndDate2,
-  setSchoolEndDate2,
-  isHidden,
-  setIsHidden,
-}) {
   const handleClick = () => {
     setIsHidden(true);
   };

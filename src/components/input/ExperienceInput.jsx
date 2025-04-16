@@ -1,35 +1,39 @@
 import InputLabel from './InputLabel';
 import { formatDate } from '../../util';
 import { FaXmark } from 'react-icons/fa6';
+import { useContext } from 'react';
+import ExperienceContext from '../../context/ExperienceContext';
 
-function ExperienceInput({
-  role1StartDate,
-  setRole1StartDate,
-  role2StartDate,
-  setRole2StartDate,
-  role1EndDate,
-  setRole1EndDate,
-  role2EndDate,
-  setRole2EndDate,
-  role1,
-  setRole1,
-  role2,
-  setRole2,
-  company1,
-  setCompany1,
-  company2,
-  setCompany2,
-  role1D1,
-  setRole1D1,
-  role1D2,
-  setRole1D2,
-  role2D1,
-  setRole2D1,
-  role2D2,
-  setRole2D2,
-  isHidden,
-  setIsHidden,
-}) {
+function ExperienceInput() {
+  const {
+    role1StartDate,
+    setRole1StartDate,
+    role2StartDate,
+    setRole2StartDate,
+    role1EndDate,
+    setRole1EndDate,
+    role2EndDate,
+    setRole2EndDate,
+    role1,
+    setRole1,
+    role2,
+    setRole2,
+    company1,
+    setCompany1,
+    company2,
+    setCompany2,
+    role1D1,
+    setRole1D1,
+    role1D2,
+    setRole1D2,
+    role2D1,
+    setRole2D1,
+    role2D2,
+    setRole2D2,
+    isHidden,
+    setIsHidden,
+  } = useContext(ExperienceContext);
+
   const handleClick = () => {
     setIsHidden(true);
   };

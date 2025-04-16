@@ -1,18 +1,21 @@
-function Experience({
-  role1StartDate,
-  role2StartDate,
-  role1EndDate,
-  role2EndDate,
-  role1,
-  role2,
-  company1,
-  company2,
-  role1D1,
-  role1D2,
-  role2D1,
-  role2D2,
-  isHidden,
-}) {
+import { useContext } from 'react';
+import ExperienceContext from '../context/ExperienceContext';
+function Experience() {
+  const {
+    role1StartDate,
+    role2StartDate,
+    role1EndDate,
+    role2EndDate,
+    role1,
+    role2,
+    company1,
+    company2,
+    role1D1,
+    role1D2,
+    role2D1,
+    role2D2,
+    isHidden,
+  } = useContext(ExperienceContext);
   return (
     <>
       <div className="experience">
